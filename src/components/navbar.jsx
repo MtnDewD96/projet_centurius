@@ -1,50 +1,46 @@
 import React, { Component } from "react";
-import {
-    Navbar,
-    Container,
-    Nav,
-    Form,
-    FormControl,
-    Button,
-} from "react-bootstrap";
+import { Navbar, Container, Nav, Col, Row } from "react-bootstrap";
+import SearchBar from "./searchbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { faBell } from "@fortawesome/free-solid-svg-icons";
 
 class Navbar_Cen extends Component {
     render() {
         return (
             <Navbar bg="light" expand="lg">
-                <Container>
-                    <Navbar.Brand href="#home">
-                        <img
-                            src="./img/Centurius_logo.png"
-                            width="60px"
-                            height="60px"
-                            alt="legault"
-                        ></img>
-                        <span className="logo-title align-middle">
-                            Centurius
-                        </span>
-                    </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Navbar.Collapse id="basic-navbar-nav">
-                        <Nav className="me-auto">
-                            <Form className="d-flex">
-                                <FormControl
-                                    type="search"
-                                    placeholder="Search"
-                                    className="mr-2"
-                                    aria-label="Search"
-                                />
-                                <Button variant="outline-success">
+                <Container fluid>
+                    ˇ
+                    <Row className="w-100">
+                        <Col md={4}>
+                            <Navbar.Brand className="mr-auto" href="#home">
+                                <img
+                                    src="./img/Centurius_logo.png"
+                                    width="60px"
+                                    height="60px"
+                                    alt="legault"
+                                ></img>
+                                <span className="logo-title align-middle">
+                                    Centurius
+                                </span>
+                            </Navbar.Brand>
+                        </Col>
+                        <Col md={4}>
+                            <SearchBar />
+                        </Col>
+                        <Col md={4} className=" d-flex justify-content-end">
+                            <Nav>
+                                <Nav.Link href="#notification">
                                     <FontAwesomeIcon
                                         className="sherb-green"
-                                        icon={faCoffee}
+                                        icon={faBell}
                                     />
-                                </Button>
-                            </Form>
-                        </Nav>
-                    </Navbar.Collapse>
+                                </Nav.Link>
+                                <Nav.Link href="#profile">
+                                    Doyon, Marc-André
+                                </Nav.Link>
+                            </Nav>
+                        </Col>
+                    </Row>
                 </Container>
             </Navbar>
         );
