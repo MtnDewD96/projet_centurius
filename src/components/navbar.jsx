@@ -7,7 +7,7 @@ import { faBell } from "@fortawesome/free-solid-svg-icons";
 class Navbar_Cen extends Component {
     render() {
         return (
-            <Navbar bg="light" expand="lg">
+            <Navbar fixed="top" bg="light" expand="lg">
                 <Container fluid>
                     ˇ
                     <Row className="w-100">

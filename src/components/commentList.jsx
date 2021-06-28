@@ -11,6 +11,8 @@ class CommentList extends Component {
         return (
             <Container className="mt-2 mr-2 p-0">
                 <Comment />
+                <Comment />
+                <Comment />
             </Container>
         );
     }

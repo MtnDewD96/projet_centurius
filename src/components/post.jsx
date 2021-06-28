@@ -71,6 +71,7 @@ class Post extends Component {
                             onClick={() => alert("sheeeeesh")}
                         >
                             <FontAwesomeIcon icon={faThumbsUp} />
+                            <span className="m-2 font-weight-bold">(30)</span>
                         </button>
                     </Col>
                     <Col className="d-flex justify-content-center p-0">

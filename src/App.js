@@ -2,7 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Navbar_Cen from "./components/navbar";
 import { Col, Container, Row } from "react-bootstrap";
-import Post from "./components/post";
+import NewsFeed from "./components/newsFeed";
 
 function App() {
     return (
@@ -16,7 +16,7 @@ function App() {
                 <Row>
                     <Col md={2}></Col>
                     <Col md={6}>
-                        <Post />
+                        <NewsFeed />
                     </Col>
                     <Col md={4}></Col>
                 </Row>
