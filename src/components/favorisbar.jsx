@@ -14,7 +14,7 @@ class FavorisBar extends Component {
       <Container className="favoris_container">
         <Col>
           <Row className="favoris_header justify-content-center">
-            <Col className="abonnements_header d-flex justify-content-center">
+            <Col className="subscribe_header d-flex justify-content-center">
               {this.formatName()}
             </Col>
             <Row>

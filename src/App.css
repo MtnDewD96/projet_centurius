@@ -167,6 +167,8 @@ input:focus {
 }
 
 .favList_button {
+  font-weight: bold;
+  font-size: 20px;
   background-color: #62a067;
   border-radius: 15px;
   border: none;
@@ -175,22 +177,18 @@ input:focus {
 }
 
 .favoris_title {
+  font-weight: bold;
+  font-size: 20px;
   background-color: #ffd700;
   border-radius: 10px;
   border: none;
-  padding: 5px !important;
-  margin: 5px !important;
-}
-
-.trash_title {
-  background-color: #ffd700;
-  border-radius: 10px;
-  border: none;
-  padding: 5px !important;
-  margin: 5px !important;
+  padding-top: 10px !important;
+  margin: 1px !important;
 }
 
 .trashList_button {
+  font-weight: bold;
+  font-size: 20px;
   background-color: #62a067;
   border-radius: 15px;
   border: none;
@@ -198,10 +196,17 @@ input:focus {
   margin: 5px !important;
 }
 
-.abonnements_header {
-  background-color: #ffd700;
+.subscribe_header {
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 25px;
+  background-color: #e8f0ebbd 1px solid;
   border-radius: 5px;
   border: none;
   padding: 5px !important;
   margin: 5px !important;
+}
+
+.subscribe_header_pinIcon {
+  vertical-align: middle;
+  font-size: 40px;
 }
