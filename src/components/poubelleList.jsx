@@ -14,7 +14,12 @@ class PoubelleList extends Component {
     return (
       <Container className="poubelleList_container">
         <Row className="poubelleList_header justify-content-center">
-          {this.formatName()}
+          <button
+            className="trashList_button"
+            onClick={() => this.showHideContent()}
+          >
+            {this.formatName()}
+          </button>
         </Row>
         <Row>
           <hr></hr>

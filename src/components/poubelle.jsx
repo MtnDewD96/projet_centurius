@@ -9,7 +9,7 @@ class Poubelle extends Component {
     return (
       <Col>
         <Row>
-          <p className="text-center">Chris Lee</p>
+          <p className=" trash_title text-center">Chris Lee</p>
         </Row>
       </Col>
     );

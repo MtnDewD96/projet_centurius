@@ -10,7 +10,7 @@ class Favoris extends Component {
     return (
       <Col>
         <Row>
-          <p className="text-center">Crier LET'S GOOOOOO au Parc</p>
+          <p className="favoris_title text-center">Le parc Blanchard</p>
         </Row>
       </Col>
     );
