@@ -3,23 +3,23 @@ import { Container, Row, Col } from "react-bootstrap";
 import CommentList from "./commentList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-    faMapPin,
-    faThumbsUp,
-    faThumbsDown,
-    faReply,
+  faMapPin,
+  faThumbsUp,
+  faThumbsDown,
+  faReply,
 } from "@fortawesome/free-solid-svg-icons";
 
 class Post extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            showComment: false,
-        };
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      showComment: false,
+    };
+  }
 
-    showHideComment() {
-        this.setState({ showComment: !this.state.showComment });
-    }
+  showHideComment() {
+    this.setState({ showComment: !this.state.showComment });
+  }
 
     render() {
         const { showComment } = this.state;

@@ -1,134 +1,134 @@
 .App {
-    text-align: center;
+  text-align: center;
 }
 
 .App-logo {
-    height: 40vmin;
-    pointer-events: none;
+  height: 40vmin;
+  pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
 .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
 .App-link {
-    color: #61dafb;
+  color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .logo-title {
-    color: black !important;
-    font-family: "Hammersmith One", sans-serif;
-    font-size: 40px;
+  color: black !important;
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 40px;
 }
 
 .sherb-green {
-    color: #62a067;
+  color: #62a067;
 }
 
 .navbar-nav > a > svg {
-    font-size: 30px;
-    color: #ffd700;
-    border-right: lightgrey solid 2px;
+  font-size: 30px;
+  color: #ffd700;
+  border-right: lightgrey solid 2px;
 }
 
 .searchBar {
-    border: #e8ecf0 1px solid;
-    border-radius: 50px;
-    padding: 10px;
-    background-color: #e8ecf0;
+  border: #e8ecf0 1px solid;
+  border-radius: 50px;
+  padding: 10px;
+  background-color: #e8ecf0;
 }
 
 .searchBar_form {
-    background-color: #e8ecf0 !important;
-    border: none !important;
-    border-radius: 0% !important;
-    margin-right: 10px !important;
-    border-bottom: 2px solid #6e777f !important;
+  background-color: #e8ecf0 !important;
+  border: none !important;
+  border-radius: 0% !important;
+  margin-right: 10px !important;
+  border-bottom: 2px solid #6e777f !important;
 }
 
 input:focus {
-    outline: none !important;
-    box-shadow: none !important;
-    border-bottom: 2px #62a067 solid !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-bottom: 2px #62a067 solid !important;
 }
 
 .searchBar > button {
-    border: #e8ecf0 1px solid;
-    border-radius: 60px;
+  border: #e8ecf0 1px solid;
+  border-radius: 60px;
 }
 
 *:focus {
-    outline: none !important;
+  outline: none !important;
 }
 
 .post_container {
-    border: #e8ecf0 1px solid;
-    border-radius: 15px;
-    padding: 10px !important;
-    margin: 10px !important;
+  border: #e8ecf0 1px solid;
+  border-radius: 15px;
+  padding: 10px !important;
+  margin: 10px !important;
 }
 
 .post_picture {
-    border-radius: 50%;
-    border: #e8ecf0 1px solid;
-    width: 60px;
-    height: 60px;
+  border-radius: 50%;
+  border: #e8ecf0 1px solid;
+  width: 60px;
+  height: 60px;
 }
 
 .post_username {
-    font-size: 20px;
-    font-weight: bold;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .post_header_publicator {
-    font-size: 14px;
-    color: grey;
+  font-size: 14px;
+  color: grey;
 }
 
 .post_header_pinIcon {
-    font-size: 24px;
-    transform: rotate(45deg);
+  font-size: 24px;
+  transform: rotate(45deg);
 }
 
 .post_body {
-    margin: 10px !important;
+  margin: 10px !important;
 }
 
 .post_body_button {
-    border: none;
-    box-sizing: content-box;
-    width: 100%;
-    height: 3em;
+  border: none;
+  box-sizing: content-box;
+  width: 100%;
+  height: 3em;
 }
 
 .post_body_button_right {
-    border-bottom-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .post_body_button_left {
-    border-bottom-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .post_icon {
@@ -176,19 +176,19 @@ input:focus {
 }
 
 .post_body_button:hover {
-    background-color: lightblue;
+  background-color: lightblue;
 }
 
 .post_button_group {
-    border-top: #e8ecf0 1px solid;
-    padding: 10px;
+  border-top: #e8ecf0 1px solid;
+  padding: 10px;
 }
 
 .post_comment {
-    border-radius: 20px;
-    background-color: #e8ecf0;
-    margin-right: 8px;
-    padding: 10px;
+  border-radius: 20px;
+  background-color: #e8ecf0;
+  margin-right: 8px;
+  padding: 10px;
 }
 
 .post_comment_left {
@@ -203,11 +203,63 @@ input:focus {
 }
 
 .post_comment_username {
-    font-size: 16px;
-    font-weight: bold;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .post_comment_row {
     margin: 10px;
     margin-top: 10px !important;
+}
+
+.favoris_container {
+  border: #e8ecf0 1px solid;
+  border-radius: 15px;
+  padding: 10px !important;
+  margin: 10px !important;
+}
+
+.favList_button {
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #62a067;
+  border-radius: 15px;
+  border: none;
+  padding: 5px !important;
+  margin: 5px !important;
+}
+
+.favoris_title {
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #ffd700;
+  border-radius: 10px;
+  border: none;
+  padding-top: 10px !important;
+  margin: 1px !important;
+}
+
+.trashList_button {
+  font-weight: bold;
+  font-size: 20px;
+  background-color: #62a067;
+  border-radius: 15px;
+  border: none;
+  padding: 5px !important;
+  margin: 5px !important;
+}
+
+.subscribe_header {
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 25px;
+  background-color: #e8f0ebbd 1px solid;
+  border-radius: 5px;
+  border: none;
+  padding: 5px !important;
+  margin: 5px !important;
+}
+
+.subscribe_header_pinIcon {
+  vertical-align: middle;
+  font-size: 40px;
 }
