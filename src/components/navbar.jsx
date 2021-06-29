@@ -19,7 +19,7 @@ class Navbar_Cen extends Component {
                                     height="60px"
                                     alt="legault"
                                 ></img>
-                                <span className="logo-title align-middle">
+                                <span className="logo-title align-bottom">
                                     Centurius
                                 </span>
                             </Navbar.Brand>
@@ -36,7 +36,7 @@ class Navbar_Cen extends Component {
                                     />
                                 </Nav.Link>
                                 <Nav.Link href="#profile">
-                                    Doyon, Marc-André
+                                    Doyon, André
                                 </Nav.Link>
                             </Nav>
                         </Col>

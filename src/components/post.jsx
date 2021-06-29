@@ -3,23 +3,26 @@ import { Container, Row, Col } from "react-bootstrap";
 import CommentList from "./commentList";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faMapPin,
-  faThumbsUp,
-  faThumbsDown,
-  faReply,
+    faMapPin,
+    faThumbsUp,
+    faThumbsDown,
+    faReply,
 } from "@fortawesome/free-solid-svg-icons";
-
 class Post extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      showComment: false,
-    };
-  }
+    constructor(props) {
+        super(props);
+        var heure = new Date(),
+            time = " à " + heure.getHours() + "h" + heure.getMinutes() + "m";
+        this.state = {
+            currentTime: time,
+            date: new Date().toLocaleDateString(),
+            showComment: false,
+        };
+    }
 
-  showHideComment() {
-    this.setState({ showComment: !this.state.showComment });
-  }
+    showHideComment() {
+        this.setState({ showComment: !this.state.showComment });
+    }
 
     render() {
         const { showComment } = this.state;
@@ -38,12 +41,19 @@ class Post extends Component {
                         <span className="post_header_publicator">
                             Publié par Derek Jeter
                         </span>
+                        <p className="date_post">
+                            {"Le "}
+                            {this.state.date}
+                            {this.state.currentTime}
+                        </p>
                     </Col>
                     <Col md={1} className="d-flex justify-content-end">
-                        <FontAwesomeIcon
-                            className="post_header_pinIcon"
-                            icon={faMapPin}
-                        />
+                        <button
+                            className="post_header_pin"
+                            onClick={() => alert("Ajouter post au bilboard")}
+                        >
+                            <FontAwesomeIcon icon={faMapPin} />
+                        </button>
                     </Col>
                 </Row>
                 <Row className="post_body">
