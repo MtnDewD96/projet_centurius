@@ -107,9 +107,14 @@ input:focus {
   color: grey;
 }
 
-.post_header_pinIcon {
-  font-size: 24px;
-  transform: rotate(45deg);
+.post_header_pin {
+    font-size: 24px;
+    background-color: white;
+    border: none;
+    transform: rotate(45deg);
+    border-radius: 50px;
+    height: 49px;
+    margin-right: 1px;
 }
 
 .post_body {
@@ -157,6 +162,52 @@ input:focus {
 .post_comment_username {
   font-size: 16px;
   font-weight: bold;
+}
+
+.billboard_title {
+    color: black !important;
+    font-family: "Hammersmith One", sans-serif;
+    font-size: 28px;
+}
+
+.billboard_postPin {
+    font-size: 24px;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    transform: rotate(315deg);
+    height: 50px;
+}
+
+.billboard_username {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.date_post {
+    font-size: 14px;
+    background-image: linear-gradient(
+        to left,
+        purple,
+        blue,
+        cyan,
+        green,
+        yellow,
+        orange,
+        red
+    );
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.billboard_picture {
+    border-radius: 50%;
+    border: #e8ecf0 1px solid;
+    width: 40px;
+    height: 40px;
+    transform: rotate(45deg);
 }
 
 .favoris_container {

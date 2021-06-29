@@ -8,14 +8,26 @@ import {
   faThumbsDown,
   faReply,
 } from "@fortawesome/free-solid-svg-icons";
+import {
+    BiTennisBall,
+    FaTableTennis,
+    FcAdvance,
+    ImPushpin,
+} from "react-icons/all";
+import Billboard from "./billboard";
+import PinedPost from "./pinedPost";
 
 class Post extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      showComment: false,
-    };
-  }
+    constructor(props) {
+        super(props);
+        var heure = new Date(),
+            time = " à " + heure.getHours() + "h" + heure.getMinutes() + "m";
+        this.state = {
+            currentTime: time,
+            date: new Date().toLocaleDateString(),
+            showComment: false,
+        };
+    }
 
   showHideComment() {
     this.setState({ showComment: !this.state.showComment });
@@ -89,6 +101,17 @@ class Post extends Component {
       </Container>
     );
   }
+                        <p className="date_post">
+                            {"Le "}
+                            {this.state.date}
+                            {this.state.currentTime}
+                        </p>
+                            className="post_header_pin"
+                        <button
+                            onClick={() => alert("Ajouter post au bilboard")}
+                        >
+                            <FontAwesomeIcon icon={faMapPin} />
+                        </button>
 }
 
 export default Post;
