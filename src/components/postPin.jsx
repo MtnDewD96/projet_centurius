@@ -1,24 +1,7 @@
-import { faMap, faVenusDouble } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faMapPin,
-    faThumbsUp,
-    faThumbsDown,
-    faReply,
-    faTableTennis,
-    faAngry,
-} from "@fortawesome/free-solid-svg-icons";
+import { faMapPin } from "@fortawesome/free-solid-svg-icons";
 import React, { Component } from "react";
 import { Container, Col, Row } from "react-bootstrap";
-import {
-    BiTennisBall,
-    FaTableTennis,
-    FcAdvance,
-    ImPushpin,
-    RiPingPongFill,
-} from "react-icons/all";
-import Billboard from "./billboard";
-import Post from "./post";
 class PostPin extends Component {
     constructor(props) {
         super(props);
@@ -36,7 +19,7 @@ class PostPin extends Component {
                 <Row className="post_header">
                     <Col md={2}>
                         <button
-                            className="billboard_postPin m-1"
+                            className="billboard_postPin"
                             onClick={() => alert("Fok you")}
                         >
                             <img
@@ -53,11 +36,6 @@ class PostPin extends Component {
                         <span className="post_header_publicator">
                             Publié par {this.props.dataName}
                         </span>
-                        <p>
-                            {/* {"Le "}
-                            {this.props.date}
-                            {this.props.currentTime} */}
-                        </p>
                     </Col>
                     <Col md={1} className="d-flex justify-content-end">
                         <button
@@ -65,7 +43,6 @@ class PostPin extends Component {
                             onClick={() => alert("Effacer post du billboard")}
                         >
                             <FontAwesomeIcon icon={faMapPin} />
-                            {/* <RiPingPongFill /> */}
                         </button>
                     </Col>
                 </Row>

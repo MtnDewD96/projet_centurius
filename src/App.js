@@ -11,16 +11,18 @@ import Billboard from "./components/billboard";
 import BillboardTitle from "./components/billboardTitle";
 
 function App() {
-  return (
-    <div>
-      <Navbar_Cen />
+    return (
+        <div>
+            <Navbar_Cen />
 
             <Container fluid className="p-0">
                 <Row>
                     <Col></Col>
                 </Row>
                 <Row>
-                    <Col md={2}></Col>
+                    <Col md={2}>
+                        <FavorisBar />
+                    </Col>
                     <Col md={6}>
                         {" "}
                         {/*Grosseur de la colonne*/}
