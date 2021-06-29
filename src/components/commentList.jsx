@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Comment from "./comment";
-import { Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
+import WriteComment from "./writeComment";
 
 class CommentList extends Component {
     constructor(props) {
@@ -13,6 +14,7 @@ class CommentList extends Component {
                 <Comment />
                 <Comment />
                 <Comment />
+                <WriteComment />
             </Container>
         );
     }

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import WriteComment from "./writeComment";
 
 class CommentDepthList extends Component {
     constructor(props) {
@@ -6,7 +7,7 @@ class CommentDepthList extends Component {
         this.state = {};
     }
     render() {
-        return <p>test</p>;
+        return <WriteComment />;
     }
 }
 

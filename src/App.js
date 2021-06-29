@@ -10,16 +10,18 @@ import poubelleList from "./components/poubelleList";
 import favorisList from "./components/favorisList";
 import FavorisList from "./components/favorisList";
 function App() {
-  return (
-    <div>
-      <Navbar_Cen />
+    return (
+        <div>
+            <Navbar_Cen />
 
-            <Container fluid className="p-0">
+            <Container fluid className="p-0 dashboard">
                 <Row>
                     <Col></Col>
                 </Row>
                 <Row>
-                    <Col md={2}></Col>
+                    <Col md={2}>
+                        <FavorisBar />
+                    </Col>
                     <Col md={6}>
                         <NewsFeed />
                     </Col>
