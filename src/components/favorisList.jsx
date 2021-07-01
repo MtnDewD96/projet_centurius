@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Col, Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import Favoris from "./favoris";
 class FavorisList extends Component {
   constructor(props) {

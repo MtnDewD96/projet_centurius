@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Container, Col, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBlind } from "@fortawesome/free-solid-svg-icons";
 class Poubelle extends Component {
