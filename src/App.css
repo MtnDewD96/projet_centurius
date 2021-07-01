@@ -112,13 +112,13 @@
 }
 
 .post_header_pin {
-    font-size: 24px;
-    background-color: white;
-    border: none;
-    transform: rotate(45deg);
-    border-radius: 50px;
-    height: 49px;
-    margin-right: 1px;
+  font-size: 24px;
+  background-color: white;
+  border: none;
+  transform: rotate(45deg);
+  border-radius: 50px;
+  height: 49px;
+  margin-right: 1px;
 }
 
 .post_body {
@@ -250,23 +250,23 @@
 }
 
 .billboard_title {
-    color: black !important;
-    font-family: "Hammersmith One", sans-serif;
-    font-size: 28px;
+  color: black !important;
+  font-family: "Hammersmith One", sans-serif;
+  font-size: 28px;
 }
 
 .billboard_postPin {
-    font-size: 24px;
-    border-radius: 50%;
-    background-color: white;
-    border: none;
-    transform: rotate(315deg);
-    height: 50px;
+  font-size: 24px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  transform: rotate(315deg);
+  height: 50px;
 }
 
 .billboard_username {
-    font-size: 15px;
-    font-weight: bold;
+  font-size: 15px;
+  font-weight: bold;
 }
 
 .date_post {
@@ -274,19 +274,36 @@
 }
 
 .billboard_picture {
-    border-radius: 50%;
-    border: #e8ecf0 1px solid;
-    width: 40px;
-    height: 40px;
-    transform: rotate(45deg);
+  border-radius: 50%;
+  border: #e8ecf0 1px solid;
+  width: 40px;
+  height: 40px;
+  transform: rotate(45deg);
+}
+
+.favorisContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: #ffd700;
+  padding: 0px !important;
+  margin: 0px !important;
+  list-style: none;
 }
 
 .favoris_container {
-    border: #e8ecf0 1px solid;
-    border-radius: 15px;
-    padding: 10px !important;
-    margin: 10px !important;
-    top: 85px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: wrap;
+  justify-content: space-evenly;
+
+  list-style: none;
+  border: #e8ecf0 1px solid;
+  border-radius: 15px;
+  padding: 10px !important;
+  margin: 10px !important;
 }
 
 .favList_button {
@@ -300,13 +317,13 @@
 }
 
 .favoris_title {
-    font-weight: bold;
-    font-size: 20px;
-    background-color: #ffd700;
-    border-radius: 10px;
-    border: none;
-    padding-top: 10px !important;
-    margin: 1px !important;
+  font-weight: bold;
+  font-size: 15px;
+  background-color: #ffd700;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  margin: 1px !important;
 }
 
 .trashList_button {

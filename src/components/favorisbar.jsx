@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import FavorisList from "./favorisList";
 import PoubelleList from "./poubelleList";
+import Favoris from "./favoris";
 class FavorisBar extends Component {
     constructor(props) {
         super(props);

@@ -18,19 +18,13 @@ class Favoris extends Component {
   render() {
     const { favorisTitle } = this.state;
     return (
-      <Col>
-        <Row className="favoris_title text-center">
-          <Col md={2}>
-            <FontAwesomeIcon
-              className="subscribe_header_pinIcon"
-              icon={faVolleyballBall}
-            />
-          </Col>
-          <Col md={10}>
-            <p>{favorisTitle}</p>
-          </Col>
-        </Row>
-      </Col>
+      <ul class="favorisContainer">
+        <FontAwesomeIcon
+          className="subscribe_header_pinIcon m-2"
+          icon={faVolleyballBall}
+        />
+        <li class="favoris_title">{favorisTitle}</li>
+      </ul>
     );
   }
 }

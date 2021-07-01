@@ -6,7 +6,7 @@ class Poubelle extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      _poubelleTitle: "Chris Lee",
+      _poubelleTitle: "Les arbitres contre Vegas",
       get poubelleTitle() {
         return this._poubelleTitle;
       },
@@ -18,19 +18,13 @@ class Poubelle extends Component {
   render() {
     const { poubelleTitle } = this.state;
     return (
-      <Col>
-        <Row className=" favoris_title text-center">
-          <Col md={2}>
-            <FontAwesomeIcon
-              className="subscribe_header_pinIcon"
-              icon={faBlind}
-            />
-          </Col>
-          <Col md={10}>
-            <p>{poubelleTitle}</p>
-          </Col>
-        </Row>
-      </Col>
+      <ul class="favorisContainer">
+        <FontAwesomeIcon
+          className="subscribe_header_pinIcon m-2"
+          icon={faBlind}
+        />
+        <li class="favoris_title">{poubelleTitle}</li>
+      </ul>
     );
   }
 }
