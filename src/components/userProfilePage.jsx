@@ -9,7 +9,7 @@ class UserProfilePage extends Component {
     const { nickName } = this.state;
     const { cip } = this.state;
     return (
-      <Container className="post_container fluid">
+      <Container className="post_container">
         <Col>
           <Row>
             <Col md={5}>
@@ -19,44 +19,46 @@ class UserProfilePage extends Component {
                 alt="legault"
               ></img>
             </Col>
-            <Col md={6}>
+            <Col md={3}>
               <Row>
                 <p className="username">{nickName}</p>
               </Row>
               <Row>
-                <Col md={2}>
+                <Col className="d-flex">
                   <p className="modifyUser">CIP :</p>
+                  <span>{cip}</span>
                 </Col>
-                <Col>{cip}</Col>
               </Row>
               <Row>
                 <p className="modifyUser">Modifier le surnom</p>
               </Row>
 
               <Row>
-                <Col md={6}>
-                  <Form>
+                <Col className="p-0">
+                  <Form className="inputNickname">
                     <div class="form-group">
                       <input
                         type="email"
                         class="form-control"
-                        id="exampleInputEmail1"
+                        id="inputNickname"
                         placeholder="Entrez surnom"
                       ></input>
                     </div>
                   </Form>
                 </Col>
-                <Col>
+              </Row>
+              <Row>
+                <Col className="p-0">
                   <button
-                    className="profilepage_button"
+                    className="profilepage_button m-0"
                     onClick={() => alert("Does it exists in the DB?")}
                   >
                     Vérifier
                   </button>
                 </Col>
-                <Col>
+                <Col className="p-0">
                   <button
-                    className="profilepage_button"
+                    className="profilepage_button m-0"
                     onClick={() => alert("sheesh")}
                   >
                     Changer

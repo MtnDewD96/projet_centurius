@@ -359,13 +359,13 @@
 }
 
 .profilepage_button {
+  width: 100%;
   font-weight: bold;
   font-size: 15px;
   background-color: #e8ecf0 1px solid;
   border-radius: 10px;
   border: #282c34 1px solid;
   padding: 5px !important;
-  margin: 5px !important;
 }
 
 .profilepage_button:hover {
@@ -374,6 +374,7 @@
 
 .modifyUser {
   font-weight: bold;
+  padding-right: 10px;
 }
 
 .username {
@@ -383,4 +384,8 @@
 }
 .form-group {
   padding-right: 10px;
+}
+
+.inputNickname {
+  padding-bottom: 5px;
 }

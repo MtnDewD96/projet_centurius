@@ -5,7 +5,7 @@ class Poubelle extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      _poubelleTitle: "Les arbitres contre Vegas",
+      _poubelleTitle: "Avancer dans le cours de projet",
       get poubelleTitle() {
         return this._poubelleTitle;
       },
