@@ -20,7 +20,7 @@ class PostPin extends Component {
                     <Col md={2}>
                         <button
                             className="billboard_postPin"
-                            onClick={() => alert("Fok you")}
+                            onClick={() => alert("Page du publicator")}
                         >
                             <img
                                 src="./img/Centurius_logo.png"

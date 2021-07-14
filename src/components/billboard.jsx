@@ -5,8 +5,6 @@ import { Container, Col, Row } from "react-bootstrap";
 class Billboard extends Component {
     constructor(props) {
         super(props);
-        const postName = "";
-        const postUsername = "";
         this.state = {
             postName: "",
             postUsername: "",
