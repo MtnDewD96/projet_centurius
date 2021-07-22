@@ -3,6 +3,8 @@ import { Navbar, Container, Nav, Col, Row } from "react-bootstrap";
 import SearchBar from "./searchbar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
+import { NavLink } from 'react-router-dom';
+import { LinkContainer } from 'react-router-bootstrap';
 
 class Navbar_Cen extends Component {
     render() {
@@ -12,6 +14,7 @@ class Navbar_Cen extends Component {
                     ˇ
                     <Row className="w-100">
                         <Col md={4}>
+                        <LinkContainer  exact to="/">
                             <Navbar.Brand className="mr-auto" href="#home">
                                 <img
                                     src="./img/Centurius_logo.png"
@@ -23,6 +26,7 @@ class Navbar_Cen extends Component {
                                     Centurius
                                 </span>
                             </Navbar.Brand>
+                            </LinkContainer>
                         </Col>
                         <Col md={4}>
                             <SearchBar />
@@ -35,9 +39,9 @@ class Navbar_Cen extends Component {
                                         icon={faBell}
                                     />
                                 </Nav.Link>
-                                <Nav.Link href="#profile">
+                                <NavLink  exact to="/profil" className="nav-link">
                                     Doyon, André
-                                </Nav.Link>
+                                </NavLink>
                             </Nav>
                         </Col>
                     </Row>

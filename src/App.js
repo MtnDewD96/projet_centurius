@@ -2,12 +2,12 @@ import "./App.css";
 import Navbar_Cen from "./components/navbar";
 import { Col, Container, Row } from "react-bootstrap";
 import NewsFeed from "./components/newsFeed";
-
 import FavorisBar from "./components/favorisbar";
 import Billboard from "./components/billboard";
 import BillboardTitle from "./components/billboardTitle";
 import UserProfilePage from "./components/userProfilePage";
 import Publicator from "./components/publicator";
+import {Route, Switch} from 'react-router-dom';
 
 function App() {
     return (
@@ -23,7 +23,13 @@ function App() {
                         {" "}
                         {/*Grosseur de la colonne*/}
                         {/* <UserProfilePage /> */}
-                        <Publicator />
+                        <Switch>
+                            <Route exact path="/" component={NewsFeed} />
+                            <Route exact path="/profil" component={UserProfilePage} />
+                            <Route exact path="/publicator" component={Publicator} />
+                            {/*<Route exact path="/test" key="unique-key" render={(props) => <TestComponent {...props} param={5}/>} />*/}
+                            {/*<Route path="/" component={PageNotFound} />*/}
+                        </Switch>
                         {/* <NewsFeed /> */}
                     </Col>
                     <Col md={4}>
