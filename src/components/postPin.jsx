@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapPin } from "@fortawesome/free-solid-svg-icons";
 import React, { Component } from "react";
 import { Container, Col, Row } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
 class PostPin extends Component {
     constructor(props) {
         super(props);
@@ -18,7 +19,7 @@ class PostPin extends Component {
             <Container className="post_container pb-0">
                 <Row className="post_header">
                     <Col md={2}>
-                        <button
+                        {/* <button
                             className="billboard_postPin"
                             onClick={() => alert("Page du publicator")}
                         >
@@ -27,7 +28,14 @@ class PostPin extends Component {
                                 className="billboard_picture"
                                 alt="legault"
                             />
-                        </button>
+                        </button> */}
+                        <NavLink exact to="/publicator" className="nav-link">
+                            <img
+                                src="./img/Centurius_logo.png"
+                                className="billboard_picture"
+                                alt="legault"
+                            />
+                        </NavLink>
                     </Col>
                     <Col className="p-0">
                         <p className="billboard_username m-0">

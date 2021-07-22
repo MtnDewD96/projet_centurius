@@ -7,7 +7,7 @@ import Billboard from "./components/billboard";
 import BillboardTitle from "./components/billboardTitle";
 import UserProfilePage from "./components/userProfilePage";
 import Publicator from "./components/publicator";
-import {Route, Switch} from 'react-router-dom';
+import { Route, Switch } from "react-router-dom";
 
 function App() {
     return (
@@ -25,8 +25,16 @@ function App() {
                         {/* <UserProfilePage /> */}
                         <Switch>
                             <Route exact path="/" component={NewsFeed} />
-                            <Route exact path="/profil" component={UserProfilePage} />
-                            <Route exact path="/publicator" component={Publicator} />
+                            <Route
+                                exact
+                                path="/profil"
+                                component={UserProfilePage}
+                            />
+                            <Route
+                                exact
+                                path="/publicator"
+                                component={Publicator}
+                            />
                             {/*<Route exact path="/test" key="unique-key" render={(props) => <TestComponent {...props} param={5}/>} />*/}
                             {/*<Route path="/" component={PageNotFound} />*/}
                         </Switch>

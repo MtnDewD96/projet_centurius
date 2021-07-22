@@ -8,31 +8,16 @@ class Billboard extends Component {
         this.state = {
             postName: "",
             postUsername: "",
-            // addPost: true,
         };
-        // this.addPostToBillboard = this.addPostToBillboard.bind(this);
-        // this.erasePost = this.erasePost.bind(this);
     }
-
-    // addPostToBillboard() {
-    //     this.setState({ addPost: !this.state.addPost });
-    // }
-
-    // erasePost() {
-    //     this.setState({ addPost: false });
-    // }
-
     render() {
-        // const { addPost } = this.state;
         return (
             <Container fluid>
                 <Row>
-                    {/* {addPost && ( */}
                     <PinedPost
                         dataName={this.props.postName}
                         dataUsername={this.props.postUsername}
                     />
-                    {/* )} */}
                 </Row>
             </Container>
         );
