@@ -75,7 +75,7 @@ class Publicator extends Component {
                                     </label>
                                     <input
                                         type="text"
-                                        class="sm-1"
+                                        className="sm-1"
                                         value={this.state.valueBio}
                                         onChange={this.handleChange}
                                         placeholder="Ajouter biographie"
@@ -98,7 +98,7 @@ class Publicator extends Component {
                             <Row>
                                 <input
                                     type="text"
-                                    class="mx-sm-1"
+                                    className="mx-sm-1"
                                     value={this.state.publication}
                                     onChange={this.handleChangePost}
                                     placeholder="Écrivez de quoi"
