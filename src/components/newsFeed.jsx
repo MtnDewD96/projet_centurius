@@ -15,11 +15,11 @@ class NewsFeed extends Component {
             .get("http://localhost:9090/api/publications?index=0&limit=10")
             .then((res) => {
                 if (res.headers["content-type"] === "text/html;charset=UTF-8") {
-                    window.location.href = "http://localhost:9090/api";
+                    window.location.href = "http://localhost:9090/api/redirect";
                 }
                 const postArray = res.data;
                 this.setState({ postArray });
-                console.log(res);
+                console.log(this.state.postArray);
             });
     }
 
