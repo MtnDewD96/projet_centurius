@@ -4,10 +4,12 @@ class UserProfilePage extends Component {
   state = {
     nickName: "Emil Rebut",
     cip: "rebe0420",
+    nickNameModify: false,
   };
   render() {
     const { nickName } = this.state;
     const { cip } = this.state;
+    const { nickNameModify } = this.state;
     return (
       <Container className="post_container">
         <Col>
